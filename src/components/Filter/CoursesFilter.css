@@ -8,6 +8,10 @@
     width: 9.3rem;
 }
 
+.author-label, .author-select, .checkbox-label {
+    margin-left: 1rem;
+}
+
 .search-box__button {
     padding: 1px;
     padding-bottom: 2px;
