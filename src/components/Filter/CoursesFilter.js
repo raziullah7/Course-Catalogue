@@ -25,9 +25,12 @@ const CoursesFilter = (props) => {
           value={searchText}
           onChange={(event) => setSearchText(event.target.value)}
         ></input>
-        <br></br>
-        <label>Authors</label>
+        <br />
+        <br />
+        <label className="author-label">Authors</label>
+        <br />
         <select
+          className="author-select"
           value={selector}
           onChange={(event) => setSelector(event.target.value)}
         >
@@ -36,29 +39,30 @@ const CoursesFilter = (props) => {
             <option key={Math.random()}>{item.teacher}</option>
           ))}
         </select>
-        <br></br>
-        <label>Beginner</label>
+        <br />
+        <br />
+        <label className="checkbox-label">Beginner</label>
         <input
           type="checkbox"
           value={beginner}
           onChange={() => setBeginner(!beginner)}
         ></input>
         <br></br>
-        <label>Intermediate</label>
+        <label className="checkbox-label">Intermediate</label>
         <input
           type="checkbox"
           value={inter}
           onChange={() => setInter(!inter)}
         ></input>
         <br></br>
-        <label>Advanced</label>
+        <label className="checkbox-label">Advanced</label>
         <input
           type="checkbox"
           value={advanced}
           onChange={() => setAdvanced(!advanced)}
         ></input>
         <br></br>
-        <label>Expert</label>
+        <label className="checkbox-label">Expert</label>
         <input
           type="checkbox"
           value={expert}
