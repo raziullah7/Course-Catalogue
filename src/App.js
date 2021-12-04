@@ -5,7 +5,7 @@ import "./App.css";
 import Courses from "./components/List/Courses";
 
 function App() {
-  const [coursesPlaceholder, setCoursesPlaceholder] = useState(coursesData);
+  const [coursesPlaceholder] = useState(coursesData);
   let [duplicateCourses, setDuplicateCourses] = useState(coursesData);
 
   const onSearch = (
